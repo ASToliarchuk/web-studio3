@@ -19,27 +19,27 @@
 <body>
    <!--  Шапка-->
     <header class="header">
-        <div class="container">
-            <nav>
-                <a href="./index.html" class="logo">Web <span>Studio</span>
+        <div class="container header-nav">
+            <nav class="navigation">
+                <a href="./index.html" class="logo">Web<span>Studio</span>
                 </a>
             
                 <ul class="site-nav">
-                    <li><a href="" class="link current">Студія</a></li>
-                    <li><a href="./portfolio.html" class="link">Портфоліо</a></li>
-                    <li><a href="" class="link">Контакти</a></li>
+                    <li class="item"><a href="" class="link current">Студія</a></li>
+                    <li class="item"><a href="./portfolio.html" class="link">Портфоліо</a></li>
+                    <li class="item"><a href="" class="link">Контакти</a></li>
                 </ul>
             </nav>
             
             <ul class="auth-nav">
-                <li><a href="mailto:info@devstudio.com" class="header-link">info@devstudio.com</a></li>
-                <li><a href="tel:+80961111111" class="header-link">+38 096 111 11 11</a></li>
+                <li class="header-item"><a href="mailto:info@devstudio.com" class="header-link">info@devstudio.com</a></li>
+                <li class="header-item"><a href="tel:+80961111111" class="header-link">+38 096 111 11 11</a></li>
             </ul>
         </div>
     </header>
 
 
-<!-- Унікальна інформація -->
+<!-- Унікальна інформація -->   
 <main>
     <!-- Герой -->
     <section class="hero">
@@ -82,10 +82,10 @@
         <div class="container">
             <h2 class="work-title">Чим ми займаємося</h2>
             
-            <ul>
-                <li><img src="./images/box 1.jpg" alt="приклад" width="370" height="294"></li>
-                <li><img src="./images/box 2.jpg" alt="приклад" width="370" height="294"></li>
-                <li><img src="./images/box 3.jpg" alt="приклад" width="370" height="294"></li>
+            <ul class="work-list">
+                <li class="work-img"><img src="./images/box 1.jpg" alt="приклад" width="370" height="294"></li>
+                <li class="work-img"><img src="./images/box 2.jpg" alt="приклад" width="370" height="294"></li>
+                <li class="work-img"><img src="./images/box 3.jpg" alt="приклад" width="370" height="294"></li>
             </ul>
         </div>
     </section>
@@ -94,30 +94,40 @@
     <section class="team">
         <div class="container">
             <h2 class="team-title">Наша команда</h2>
-            <ul>
-                <li>
+            <ul class="team-list">
+
+                <li class="team-card">
                     <img src="./images/igor.jpg" alt="член команди" width="270" height="260">
+                    <div class="team-box">
+                        <h3 class="team-name">Ігор Дем'яненко</h3>
+                        <p class="team-text">Product Designer</p>
+                    </div>
                 </li>
-                <h3 class="team-name">Ігор Дем'яненко</h3>
-                <p class="team-text">Product Designer</p>
-                <li>
+                
+                <li class="team-card">
                     <img src="./images/olga.jpg" alt="член команди" width="270" height="260">
+                    <div class="team-box">
+                        <h3 class="team-name">Ольга Рєпіна</h3>
+                        <p class="team-text">Frontend Developer</p>
+                    </div>
                 </li>
-                <h3 class="team-name">Ольга Рєпіна</h3>
-                <p class="team-text">Frontend Developer</p>
-                </li>
-                <li>
+                
+                <li class="team-card">
                     <img src="./images/mykola.jpg" alt="член команди" width="270" height="260">
+                    <div class="team-box">
+                        <h3 class="team-name">Микола Тарасов</h3>
+                        <p class="team-text">Marketing</p>
+                    </div>
                 </li>
-                <h3 class="team-name">Микола Тарасов</h3>
-                <p class="team-text">Marketing</p>
-                </li>
-                <li>
+                
+                <li class="team-card">
                     <img src="./images/mihaylo.jpg" alt="член команди " width="270" height="260">
+                    <div class="team-box">
+                        <h3 class="team-name">Михайло Єрмаков</h3>
+                        <p class="team-text">UI Designer</p>
+                    </div>
                 </li>
-                <h3 class="team-name">Михайло Єрмаков</h3>
-                <p class="team-text">UI Designer</p>
-                </li>
+                
             </ul>
         </div>
     </section>
@@ -127,7 +137,7 @@
 <footer class="footer">
     <div class="container">
         <address>
-            <a href="./index.html" class="logo">Web <span>Studio</span>
+            <a href="./index.html" class="logo">Web<span>Studio</span>
             </a>
             <p class="footer-address">м. Київ, пр-т Лесі Українки, 26</p>
             <a href="mailto:info@devstudio.com" class="footer-mail">info@devstudio.com</a><br>

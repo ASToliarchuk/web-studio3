@@ -56,7 +56,6 @@ h6 {
     margin: 0;
 }
 
-
 a {
     text-decoration: none;
 }
@@ -67,18 +66,32 @@ ul {
     list-style: none;
 }
 
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
 .container{
     width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
     border: 2px solid tomato;
-
 }
 
 
 /* logo footer, header*/
+.header{
+    border: 1px solid #ECECEC;
+}
+
 .logo {
     color: var(--accent-color);
+    margin-right: 93px;
+    padding-top: 24px;
+    padding-bottom: 25px;
 
     font-family: Raleway;
     font-style: 400;
@@ -97,6 +110,35 @@ ul {
 }
 
 /* Навігація хедер */
+.header-nav{
+    display: flex;
+}
+
+.navigation{
+    display: flex;
+}
+
+.site-nav{
+    display: flex;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.site-nav .item+.item{
+    margin-left: 50px;
+}
+
+.auth-nav{
+    display: flex;
+    margin-left: auto;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.header-item+.header-item {
+    margin-left: 50px;
+}
+
 .site-nav .link{
     color: var(--primary-text-color);
 
@@ -126,6 +168,7 @@ ul {
     line-height: 16px;
     letter-spacing: 0.02em;
 }
+
 
 .header-link:hover,
 .header-link:focus {
@@ -173,20 +216,24 @@ ul {
     text-decoration: none;
 
     padding-top: 10px;
-        padding-bottom: 10px;
-        padding-left: 32px;
-        padding-right: 32px;
-        margin: auto;
-        border-radius: 4px;
-        border: 4px solid var(--accent-color);
+    padding-bottom: 10px;
+    padding-left: 32px;
+    padding-right: 32px;
+    margin: auto;
+    border-radius: 4px;
+    border: 4px solid var(--accent-color);
     }
 
 
 /* Наші особливості */
+.feature{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 .feature-title{
     color: var(--primary-text-color);
 
-    font-family: Roboto;
+    font-family: Roboto, sans-serif;
     font-style: 400;
     font-weight: 700;
     font-size: 14px;
@@ -195,7 +242,10 @@ ul {
     text-transform: uppercase;
 
     margin-bottom: 10px;
-    
+}
+
+.feature-list{
+    display: flex;
 }
 
 .feature-list li{
@@ -216,6 +266,9 @@ ul {
 }
 
 /* Чим ми займаємося (work)*/
+.work{
+    padding-bottom: 94px;
+}
 .work .work-title{
     color: var(--primary-text-color);
 
@@ -226,11 +279,27 @@ ul {
     line-height: 1.16;
     text-align: center;
     letter-spacing: 0.03em;
+
+    margin-bottom: 50px;
+}
+
+.work-list{
+    display: flex;
+}
+
+.work-img+.work-img{
+    margin-left: 30px;
 }
 
 /* Наша команда */
 .team{
     background-color: var(--background-secondary-section);
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.team-list{
+    display: flex;
 }
 
 .team .team-title{
@@ -243,6 +312,22 @@ ul {
     line-height: 1.16;
     text-align: center;
     letter-spacing: 0.03em;
+
+    margin-bottom: 50px;
+}
+
+.team-card{
+    margin-right: 30px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.team-box{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    border-radius: 0px 0px 4px 4px;
+    background: #FFFFFF;
 }
 
 .team .team-name{
@@ -254,6 +339,8 @@ ul {
     font-size: 16px;
     line-height: 1.18;
     letter-spacing: 0.03em;
+
+    margin-bottom: 10px;
 }
 .team .team-text{
     color: var(--secondary-text-color);
@@ -298,18 +385,48 @@ address{
 }
 
 /* Портфоліо (фільтр кнопки) */
-.portfolio-btn{
-    color: var(--primary-text-color);
-    background-color: var(--background-filter-btn);
-    text-decoration: none;
-}
-.primary-btn{
-    color: var(--white-color);
-    background-color: var(--accent-color);
-    text-decoration: none;
+.portfolio{
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
-.portfolio,
+.portfolio-filter{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.btn{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+    background-color: var(--background-filter-btn);
+    border-radius: 4px;
+    border: none;
+
+    padding: 6px 22px;
+}
+
+.btn:hover,
+.btn:focus{
+    color: var(--white-color);
+    background-color: var(--accent-color);
+}
+
+.portfolio-filter li {
+    margin-left: 8px;
+}
+
+.portfolio-list{
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .portfolio-title{
     color: var(--primary-text-color);
 
@@ -320,7 +437,7 @@ address{
     line-height: 2;
     letter-spacing: 0.06em;
 }
-.portfolio,
+
 .portfolio-text{
     color: var(--secondary-text-color);
 
