@@ -427,6 +427,17 @@ address{
     flex-wrap: wrap;
 }
 
+.portfolio-item{
+    min-width: 370px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    border: 1px solid #EEEEEE;
+}
+
+.portfolio-box{
+    padding: 20px 24px;
+}
+
 .portfolio-title{
     color: var(--primary-text-color);
 
