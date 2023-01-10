@@ -78,7 +78,7 @@ img{
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
-    border: 2px solid tomato;
+    /* border: 2px solid tomato; */
 }
 
 
@@ -103,6 +103,28 @@ img{
 
 .header span{
     color: var(--logo-studio-color);
+}
+
+.logo-footer {
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--accent-color);
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.img-logo-footer {
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: #2196F3;
+    text-decoration: none;
 }
 
 .footer span{
@@ -162,10 +184,8 @@ img{
     color: var(--secondary-text-color);
 
     font-family: Roboto;
-    font-style: 400;
     font-weight: 500;
-    font-size: 1.14;
-    line-height: 16px;
+    font-size: 14px;
     letter-spacing: 0.02em;
 }
 
@@ -363,27 +383,34 @@ address{
     padding-top: 60px;
     padding-bottom: 60px;
 }
+
+
 .footer-address{
     color: var(--white-color);
     
     font-family: Roboto;
-    font-style: 400;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
+
+    margin-bottom: 9px;
 }
+
 
 .footer-mail,
 .footer-tel{
     color: var(--footer-link-color);
 
+    display: inline-block;
     font-family: Roboto;
-    font-style: 400;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
+}
+.footer-mail {
+    margin-bottom: 9px;
 }
 
 /* Портфоліо (фільтр кнопки) */
