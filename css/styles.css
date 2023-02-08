@@ -462,11 +462,12 @@ address{
     flex-basis: calc(100% / 3 - 30px);
     margin-left: 30px;
     margin-bottom: 30px;
-    border: 1px solid #EEEEEE;
+    
 }
 
 .portfolio-box{
     padding: 20px 24px;
+    border: 1px solid #EEEEEE;
 }
 
 .portfolio-title{
